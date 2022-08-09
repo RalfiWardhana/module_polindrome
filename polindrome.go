@@ -1,6 +1,7 @@
 package polindrome
 
 import (
+	"fmt"
 	"strings"
 )
 
@@ -18,8 +19,8 @@ func Polindrome(kalimat string) bool {
 	return true
 }
 
-func KonsonanOrVocal(huruf string) string {
-
+func KonsonanOrVocal(huruf string, test string) string {
+	fmt.Println(test)
 	convertLowerCase := strings.ToLower(huruf)
 
 	var result string
